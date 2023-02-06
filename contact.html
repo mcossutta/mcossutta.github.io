@@ -4,31 +4,41 @@
 		<meta charset="UTF-8">
 		<title>Page d'accueil</title>
 		<link rel="stylesheet" href="design.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div id="container">
 		<header>
-			<h1>Informatique avancée : Monsieur Cossutta</h1>
+			<button class="btn" onclick="myFunction()"><i class="fa fa-bars"></i></button>
+			<h1>Informatique avancée </h1>
 		</header>
 		<span id = "main">
-			<nav>
+			<nav id = "nav-panel" style="display:none">
               
 				<ul>
+				
 					<li><a href="index.html">Accueil</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<p>Les pages des élèves</p>
-					<li><a href="https://anisa943.github.io">Le projet d'Anisa</a></li>
+					<li><a href="eleves.html">Les pages des élèves</a></li>
 				</ul>
 			</nav>
 			<section>
 				Mathieu Cossutta
-                Passage de l'Eugine 4 1902 
-                Evionnaz
 			</section>
 		</span>
 		<footer>
 			2022-2023 Informatique avancée EDA
 		</footer>
 	</div>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("nav-panel");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+		</script>
 	</body>
 </html>
